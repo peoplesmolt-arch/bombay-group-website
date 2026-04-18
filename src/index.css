@@ -1,0 +1,136 @@
+/* ── Bombay Group — Global Styles ────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Brand greens */
+  --green-dark:   #1B4332;
+  --green-mid:    #2D6A4F;
+  --green-light:  #52B788;
+  --green-pale:   #D8F3DC;
+
+  /* Brand gold */
+  --gold:         #C9A84C;
+  --gold-light:   #E8C86A;
+  --gold-pale:    #F5E9C4;
+
+  /* Silver palette – main background */
+  --silver:       #E8E9EC;   /* primary background */
+  --silver-light: #F2F3F5;   /* lighter sections */
+  --silver-mid:   #D4D6DB;   /* borders / dividers */
+  --silver-dark:  #B0B3BB;   /* muted text accents */
+  --silver-shine: #ECEEF1;   /* hero/card surfaces */
+
+  /* Neutrals */
+  --white:        #FFFFFF;
+  --off-white:    #F9F7F2;
+  --grey-100:     #F5F5F5;
+  --grey-300:     #D1D5DB;
+  --grey-600:     #6B7280;
+  --dark:         #111827;
+
+  /* Typography */
+  --font-serif:  'Playfair Display', Georgia, serif;
+  --font-sans:   'Inter', system-ui, sans-serif;
+
+  /* Shadows */
+  --shadow-sm:   0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md:   0 4px 16px rgba(0,0,0,0.10);
+  --shadow-lg:   0 8px 32px rgba(0,0,0,0.13);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  color: var(--dark);
+  background: var(--silver);
+  line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; }
+
+img { display: block; max-width: 100%; }
+
+/* ── Utilities ─────────────────────────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section { padding: 5rem 0; }
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--green-dark);
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: var(--grey-600);
+  max-width: 640px;
+}
+
+.gold-line {
+  width: 60px;
+  height: 4px;
+  background: var(--gold);
+  border-radius: 2px;
+  margin: 1rem 0 2rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 2px solid transparent;
+  font-family: var(--font-sans);
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--green-dark);
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+.btn-outline {
+  border-color: var(--white);
+  color: var(--white);
+  background: transparent;
+}
+.btn-outline:hover { background: var(--white); color: var(--green-dark); }
+
+.btn-dark {
+  background: var(--green-dark);
+  color: var(--white);
+}
+.btn-dark:hover { background: var(--green-mid); transform: translateY(-1px); }
+
+/* ── Animations ────────────────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up { animation: fadeUp 0.7s ease both; }
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+
+/* ── Scrollbar ─────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--grey-100); }
+::-webkit-scrollbar-thumb { background: var(--green-mid); border-radius: 4px; }

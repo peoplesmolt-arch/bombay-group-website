@@ -1,0 +1,59 @@
+.coming-soon {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background: var(--off-white);
+}
+.coming-soon__inner {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+.coming-soon__icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.coming-soon__title {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--green-dark);
+  margin-bottom: 1rem;
+}
+.coming-soon__sub {
+  font-size: 1rem;
+  color: var(--grey-600);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+.coming-soon__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--green-dark);
+  background: var(--green-pale);
+  padding: 0.5rem 1.25rem;
+  border-radius: 20px;
+  margin-bottom: 2.5rem;
+}
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green-mid);
+  animation: pulse 1.4s ease-in-out infinite;
+  flex-shrink: 0;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.4); }
+}
+.coming-soon__actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
