@@ -100,7 +100,7 @@ const COMPANIES = [
 
 const NEWS = [
   { date: 'Sept 3, 2020', category: 'International', title: 'Letter of Intent Signed for Purchase of Gold',            excerpt: 'Bombay Finance India signs LOI to purchase gold from ImpTrax Corporation — expanding its asset portfolio into high-value international commodity trade.',                                                                    path: '/news' },
-  { date: 'Nov 6, 2017',  category: 'Government',    title: 'Jharkhand Acknowledges Bombay Finance India's ECB Initiative', excerpt: 'Formal correspondence exchanged between the Government of Jharkhand and Managing Director Mr. Satpal Singh Oberai in recognition of ECB-linked development efforts.',                               path: '/news' },
+  { date: 'Nov 6, 2017',  category: 'Government',    title: "Jharkhand Acknowledges Bombay Finance India's ECB Initiative", excerpt: 'Formal correspondence exchanged between the Government of Jharkhand and Managing Director Mr. Satpal Singh Oberai in recognition of ECB-linked development efforts.',                               path: '/news' },
   { date: 'July 15, 2016',category: 'International', title: 'MoU Signed with United Refineries Botswana',              excerpt: 'A landmark cross-border MoU between URB and BFI marking a significant milestone in international collaboration and the Group\'s African expansion.',                                                             path: '/news' },
 ];
 
