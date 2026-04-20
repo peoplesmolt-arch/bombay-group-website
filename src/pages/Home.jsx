@@ -226,13 +226,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="hero__scroll">
-          <span className="hero__scroll-text">Scroll</span>
-          <div className="hero__scroll-line">
-            <div className="hero__scroll-dot" />
-          </div>
-        </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
