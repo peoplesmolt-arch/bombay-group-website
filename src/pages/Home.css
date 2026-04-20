@@ -673,7 +673,16 @@
 }
 .company-card:hover::before { transform: scaleY(1); }
 
-.company-card__flag { font-size: 2.2rem; flex-shrink: 0; transition: transform 0.3s; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15)); }
+.company-card__flag {
+  width: 48px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+  transition: transform 0.3s;
+  background-size: cover;
+  background-position: center;
+}
 .company-card:hover .company-card__flag { transform: scale(1.15); }
 .company-card__name { font-weight: 600; font-size: 0.88rem; color: var(--green-dark); line-height: 1.3; }
 .company-card__type { font-size: 0.72rem; color: var(--grey-600); margin-top: 0.15rem; }

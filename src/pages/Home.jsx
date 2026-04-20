@@ -86,16 +86,16 @@ const VERTICALS = [
 ];
 
 const COMPANIES = [
-  { name: 'Bombay Finance India Pvt Ltd',  country: '🇮🇳', path: '/companies/bombay-finance-india',     type: 'NBFC · Finance' },
-  { name: 'Bombay Ace Motors India',       country: '🇮🇳', path: '/companies/bombay-ace-motors',         type: 'Mobility · Hospitality' },
-  { name: 'Bombay Motors India Pvt Ltd',   country: '🇮🇳', path: '/companies/bombay-motors',             type: 'Auto Components' },
-  { name: 'Bombay Fine Art Pvt Ltd',       country: '🇮🇳', path: '/companies/bombay-fine-art',           type: 'Cinema · Culture' },
-  { name: 'Quasathu Investment LLC',       country: '🇻🇳', path: '/companies/quasathu-investment-llc',   type: 'Real Estate · Vietnam' },
-  { name: 'Quasathu Tourism LLC',          country: '🇻🇳', path: '/companies/quasathu-tourism',          type: 'Tourism · Vietnam' },
-  { name: 'Bombay Group Liberia Ltd',      country: '🇱🇷', path: '/companies/bombay-group-liberia',      type: 'Sugar · Energy · Manufacturing' },
-  { name: 'Bombay Group Botswana',         country: '🇧🇼', path: '/companies/bombay-group-botswana',     type: 'Finance · Mining' },
-  { name: 'Bombay Trading LLC',            country: '🇦🇪', path: '/companies/bombay-trading',            type: 'Real Estate · Dubai' },
-  { name: 'Quasathu Investment LLP',       country: '🇮🇳', path: '/companies/quasathu-investment-llp',   type: 'India–Vietnam Corridor' },
+  { name: 'Bombay Finance India Pvt Ltd',  code: 'in', path: '/companies/bombay-finance-india',     type: 'NBFC · Finance' },
+  { name: 'Bombay Ace Motors India',       code: 'in', path: '/companies/bombay-ace-motors',         type: 'Mobility · Hospitality' },
+  { name: 'Bombay Motors India Pvt Ltd',   code: 'in', path: '/companies/bombay-motors',             type: 'Auto Components' },
+  { name: 'Bombay Fine Art Pvt Ltd',       code: 'in', path: '/companies/bombay-fine-art',           type: 'Cinema · Culture' },
+  { name: 'Quasathu Investment LLC',       code: 'vn', path: '/companies/quasathu-investment-llc',   type: 'Real Estate · Vietnam' },
+  { name: 'Quasathu Tourism LLC',          code: 'vn', path: '/companies/quasathu-tourism',          type: 'Tourism · Vietnam' },
+  { name: 'Bombay Group Liberia Ltd',      code: 'lr', path: '/companies/bombay-group-liberia',      type: 'Sugar · Energy · Manufacturing' },
+  { name: 'Bombay Group Botswana',         code: 'bw', path: '/companies/bombay-group-botswana',     type: 'Finance · Mining' },
+  { name: 'Bombay Trading LLC',            code: 'ae', path: '/companies/bombay-trading',            type: 'Real Estate · Dubai' },
+  { name: 'Quasathu Investment LLP',       code: 'in', path: '/companies/quasathu-investment-llp',   type: 'India–Vietnam Corridor' },
 ];
 
 const NEWS = [
@@ -340,7 +340,7 @@ export default function Home() {
           <div className="companies__grid">
             {COMPANIES.map((c, i) => (
               <Link key={c.path} to={c.path} className="company-card stagger-item" style={{ '--stagger': i }}>
-                <span className="company-card__flag">{c.country}</span>
+                <span className={`fi fi-${c.code} company-card__flag`}></span>
                 <div>
                   <div className="company-card__name">{c.name}</div>
                   <div className="company-card__type">{c.type}</div>
