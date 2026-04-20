@@ -116,23 +116,9 @@ export default function Footer() {
                 <a href="tel:+919167824209" className="footer__link">+91 9167824209</a>
               </div>
               <div className="footer__contact-item">
-                <span className="footer__contact-icon">📞</span>
-                <a href="tel:+919880164209" className="footer__link">+91 9880164209</a>
-              </div>
-              <div className="footer__contact-item">
-                <span className="footer__contact-icon">📞</span>
-                <a href="tel:+912220876788" className="footer__link">022 20876788</a>
-              </div>
-              <div className="footer__contact-item">
                 <span className="footer__contact-icon">✉️</span>
                 <a href="mailto:oberai@bombayfinanceindia.com" className="footer__link">
                   oberai@bombayfinanceindia.com
-                </a>
-              </div>
-              <div className="footer__contact-item">
-                <span className="footer__contact-icon">✉️</span>
-                <a href="mailto:bombayfinanceindia@gmail.com" className="footer__link">
-                  bombayfinanceindia@gmail.com
                 </a>
               </div>
               <div className="footer__contact-item">

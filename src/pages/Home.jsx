@@ -225,38 +225,37 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right — floating credential cards */}
+          {/* Right — credential stat grid */}
           <div className="hero__right">
-            <div className="hero__cards-wrap">
-              <div className="hero-card hero-card--1">
-                <div className="hero-card__icon">🏛️</div>
-                <div className="hero-card__label">RBI Approved</div>
-                <div className="hero-card__sub">Foreign Investor in India</div>
+            <div className="hero__stat-grid">
+              <div className="hero__stat-card hero__stat-card--1">
+                <div className="hero__stat-icon">🏛️</div>
+                <div className="hero__stat-num">RBI</div>
+                <div className="hero__stat-label">Approved NBFC</div>
+                <div className="hero__stat-sub">Foreign Investor in India</div>
               </div>
-              <div className="hero-card hero-card--2">
-                <div className="hero-card__num">25+</div>
-                <div className="hero-card__label">Years of Excellence</div>
-                <div className="hero-card__bar">
-                  <span className="hero-card__bar-fill" style={{ width: '85%' }} />
-                </div>
+              <div className="hero__stat-card hero__stat-card--2">
+                <div className="hero__stat-icon">📅</div>
+                <div className="hero__stat-num">25+</div>
+                <div className="hero__stat-label">Years of Excellence</div>
+                <div className="hero__stat-sub">Est. 1998</div>
               </div>
-              <div className="hero-card hero-card--3">
-                <div className="hero-card__globe">🌍</div>
-                <div className="hero-card__label">4 Continents</div>
-                <div className="hero-card__chips">
-                  {['🇮🇳', '🇻🇳', '🇦🇪', '🇱🇷'].map(f => (
-                    <span key={f} className="hero-card__chip">{f}</span>
+              <div className="hero__stat-card hero__stat-card--3">
+                <div className="hero__stat-icon">🌍</div>
+                <div className="hero__stat-num">4</div>
+                <div className="hero__stat-label">Continents</div>
+                <div className="hero__stat-flags">
+                  {['🇮🇳', '🇻🇳', '🇦🇪', '🇱🇷', '🇧🇼'].map(f => (
+                    <span key={f}>{f}</span>
                   ))}
                 </div>
               </div>
-              <div className="hero-card hero-card--4">
-                <div className="hero-card__num">$550M+</div>
-                <div className="hero-card__label">Investment Pipeline</div>
-                <div className="hero-card__tag">Vietnam JV</div>
+              <div className="hero__stat-card hero__stat-card--4">
+                <div className="hero__stat-icon">💼</div>
+                <div className="hero__stat-num">$550M+</div>
+                <div className="hero__stat-label">Investment Pipeline</div>
+                <div className="hero__stat-sub">Vietnam JV &amp; Beyond</div>
               </div>
-              {/* Decorative ring */}
-              <div className="hero__ring hero__ring--outer" />
-              <div className="hero__ring hero__ring--inner" />
             </div>
           </div>
         </div>
@@ -495,7 +494,7 @@ export default function Home() {
             <div className="enquiry-cta__contact">
               <div className="enquiry-contact-item">
                 <span>📞</span>
-                <span>+91 9167824209 / +91 9880164209</span>
+                <span>+91 9167824209</span>
               </div>
               <div className="enquiry-contact-item">
                 <span>📧</span>
