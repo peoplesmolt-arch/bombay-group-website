@@ -210,11 +210,14 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 6rem 0 4rem;
+  padding: 7rem 0 5rem;
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* Left */
-.hero__left { display: flex; flex-direction: column; gap: 0; align-items: center; }
+.hero__left { display: flex; flex-direction: column; gap: 0; align-items: center; width: 100%; }
 
 .hero__badge {
   display: inline-flex;
@@ -252,13 +255,13 @@
   gap: 0.25rem;
 }
 .hero__title-line--1 {
-  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-size: clamp(2.4rem, 4.5vw, 4rem);
   color: rgba(255,255,255,0.75);
   font-weight: 400;
   animation: fadeLeft 0.8s 0.25s ease both;
 }
 .hero__title-line--2 {
-  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-size: clamp(2.8rem, 5.5vw, 4.8rem);
   animation: fadeLeft 0.8s 0.4s ease both;
   min-height: 1.2em;
 }
@@ -270,11 +273,11 @@
 }
 
 .hero__desc {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   color: rgba(255,255,255,0.75);
-  max-width: 600px;
-  margin-bottom: 2rem;
-  line-height: 1.8;
+  max-width: 820px;
+  margin-bottom: 2.5rem;
+  line-height: 1.85;
   animation: fadeLeft 0.8s 0.55s ease both;
   text-align: center;
 }
