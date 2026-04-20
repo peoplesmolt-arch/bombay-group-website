@@ -224,40 +224,6 @@ export default function Home() {
               ))}
             </div>
           </div>
-
-          {/* Right — credential stat grid */}
-          <div className="hero__right">
-            <div className="hero__stat-grid">
-              <div className="hero__stat-card hero__stat-card--1">
-                <div className="hero__stat-icon">🏛️</div>
-                <div className="hero__stat-num">RBI</div>
-                <div className="hero__stat-label">Approved NBFC</div>
-                <div className="hero__stat-sub">Foreign Investor in India</div>
-              </div>
-              <div className="hero__stat-card hero__stat-card--2">
-                <div className="hero__stat-icon">📅</div>
-                <div className="hero__stat-num">25+</div>
-                <div className="hero__stat-label">Years of Excellence</div>
-                <div className="hero__stat-sub">Est. 1998</div>
-              </div>
-              <div className="hero__stat-card hero__stat-card--3">
-                <div className="hero__stat-icon">🌍</div>
-                <div className="hero__stat-num">4</div>
-                <div className="hero__stat-label">Continents</div>
-                <div className="hero__stat-flags">
-                  {['🇮🇳', '🇻🇳', '🇦🇪', '🇱🇷', '🇧🇼'].map(f => (
-                    <span key={f}>{f}</span>
-                  ))}
-                </div>
-              </div>
-              <div className="hero__stat-card hero__stat-card--4">
-                <div className="hero__stat-icon">💼</div>
-                <div className="hero__stat-num">$550M+</div>
-                <div className="hero__stat-label">Investment Pipeline</div>
-                <div className="hero__stat-sub">Vietnam JV &amp; Beyond</div>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Scroll indicator */}
