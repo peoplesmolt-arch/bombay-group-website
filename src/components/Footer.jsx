@@ -117,9 +117,14 @@ export default function Footer() {
               </div>
               <div className="footer__contact-item">
                 <span className="footer__contact-icon">✉️</span>
-                <a href="mailto:contactus@bombayfinanceindia.com" className="footer__link">
-                  contactus@bombayfinanceindia.com
-                </a>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                  <a href="mailto:contactus@bombayfinanceindia.com" className="footer__link">
+                    contactus@bombayfinanceindia.com
+                  </a>
+                  <a href="mailto:bombayfinanceindia@gmail.com" className="footer__link">
+                    bombayfinanceindia@gmail.com
+                  </a>
+                </div>
               </div>
               <div className="footer__contact-item">
                 <span className="footer__contact-icon">💬</span>
