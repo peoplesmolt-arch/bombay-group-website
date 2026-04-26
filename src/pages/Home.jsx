@@ -452,15 +452,18 @@ export default function Home() {
             <div className="enquiry-cta__contact">
               <div className="enquiry-contact-item">
                 <span>📞</span>
-                <span>+91 9167824209</span>
+                <span>91-22-20876788</span>
               </div>
               <div className="enquiry-contact-item">
                 <span>📧</span>
-                <a href="mailto:oberai@bombayfinanceindia.com">oberai@bombayfinanceindia.com</a>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                  <a href="mailto:contactus@bombayfinanceindia.com">contactus@bombayfinanceindia.com</a>
+                  <a href="mailto:bombayfinanceindia@gmail.com">bombayfinanceindia@gmail.com</a>
+                </div>
               </div>
               <div className="enquiry-contact-item">
                 <span>📍</span>
-                <span>Vashi IT Park, Navi Mumbai – 400703</span>
+                <span>Sector 15, CBD Belapur, Navi Mumbai, Maharashtra, India</span>
               </div>
             </div>
           </div>
