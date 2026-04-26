@@ -160,7 +160,7 @@ export default function Footer() {
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
           <p className="footer__copyright">
-            © {new Date().getFullYear()} Bombay Finance India Pvt Ltd. All rights reserved.
+            Copyright © 2000-2025 by Bombay G₹oup. All rights reserved.
           </p>
           <div className="footer__legal-links">
             <Link to="/privacy">Privacy Policy</Link>
