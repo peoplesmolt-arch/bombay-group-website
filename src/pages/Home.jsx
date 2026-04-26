@@ -251,14 +251,9 @@ export default function Home() {
             <h2 className="section-title">A Conglomerate Built on<br />Integrity &amp; Vision</h2>
             <div className="gold-line gold-line--anim" />
             <p className="who-we-are__desc">
-              Bombay Group is a well-diversified conglomerate founded by Mr. Satpal Singh Oberai
-              and Prof. Sankaranarayanan Subramanian. Through our NBFC platform, we provide financial
-              assistance and effective wealth management across Infrastructure, Real Estate,
-              Manufacturing, Hospitality, Education, and Healthcare.
-            </p>
-            <p className="who-we-are__desc" style={{ marginTop: '1rem' }}>
-              RBI-approved foreign investors in India, committed to the <strong>Make in India</strong> vision —
-              promoting dynamic individuals &amp; corporates who dream to prosper and build the nation.
+              Bombay Group is a diversified conglomerate founded by Mr. Satpal Singh Oberai and Prof. Sankaranarayanan Subramanian.
+              Through our NBFC platform, we deliver structured credit and drive efficient capital deployment across infrastructure
+              and allied sectors, enabling sustainable wealth creation.
             </p>
             <div className="who-we-are__badges">
               {[['🏛️', 'RBI-Approved Foreign Investor'], ['📜', 'NBFC Registered'], ['🇮🇳', 'Make in India Partner']].map(([icon, text]) => (
