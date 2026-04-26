@@ -109,21 +109,21 @@ export default function Footer() {
             <address className="footer__address">
               <div className="footer__contact-item">
                 <span className="footer__contact-icon">📍</span>
-                <span>Office No. 1112, 11th Floor, Real Tech Park,<br />Sector-30A, Vashi IT Park, Navi Mumbai – 400703</span>
+                <span>Sector 15, CBD Belapur,<br />Navi Mumbai, Maharashtra, India</span>
               </div>
               <div className="footer__contact-item">
                 <span className="footer__contact-icon">📞</span>
-                <a href="tel:+919167824209" className="footer__link">+91 9167824209</a>
+                <a href="tel:912220876788" className="footer__link">91-22-20876788</a>
               </div>
               <div className="footer__contact-item">
                 <span className="footer__contact-icon">✉️</span>
-                <a href="mailto:oberai@bombayfinanceindia.com" className="footer__link">
-                  oberai@bombayfinanceindia.com
+                <a href="mailto:contactus@bombayfinanceindia.com" className="footer__link">
+                  contactus@bombayfinanceindia.com
                 </a>
               </div>
               <div className="footer__contact-item">
                 <span className="footer__contact-icon">💬</span>
-                <a href="https://wa.me/919167824209" target="_blank" rel="noreferrer" className="footer__link footer__link--wa">
+                <a href="https://wa.me/912220876788" target="_blank" rel="noreferrer" className="footer__link footer__link--wa">
                   WhatsApp Us
                 </a>
               </div>
